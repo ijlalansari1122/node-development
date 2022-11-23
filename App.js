@@ -45,6 +45,7 @@ const replacetemplate = (temp, product) => {
 
 
 
+
 const server = http.createServer((req, res) => {
    
     const pathurl = req.url;
@@ -70,7 +71,7 @@ const server = http.createServer((req, res) => {
     }
 
     else if (pathurl === '/api') {
-        res.writeHead(500, { 'Content-type': 'application/json' })
+        res.writeHead(200, { 'Content-type': 'application/json' })
         res.end(data);
 
 
